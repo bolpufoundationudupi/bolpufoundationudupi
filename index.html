@@ -1,240 +1,386 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>W3.CSS Template</title>
-<meta charset="UTF-8">
+<!-- basic -->
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-body {font-family: "Lato", sans-serif}
-.mySlides {display: none}
-</style>
+<!-- mobile metas -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+<!-- site metas -->
+<title>Cial</title>
+<meta name="keywords" content="">
+<meta name="description" content="">
+<meta name="author" content=""> 
+<!-- bootstrap css -->
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<!-- style css -->
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<!-- Responsive-->
+<link rel="stylesheet" href="css/responsive.css">
+<!-- fevicon -->
+<link rel="icon" href="images/fevicon.png" type="image/gif" />
+<!-- Scrollbar Custom CSS -->
+<link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+<!-- Tweaks for older IEs-->
+<link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+<!-- owl stylesheets --> 
+<link rel="stylesheet" href="css/owl.carousel.min.css">
+<link rel="stylesheet" href="css/owl.theme.default.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
 </head>
 <body>
-
-<!-- Navbar -->
-<div class="w3-top">
-  <div class="w3-bar w3-black w3-card">
-    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-    <a href="#" class="w3-bar-item w3-button w3-padding-large">HOME</a>
-    <a href="#band" class="w3-bar-item w3-button w3-padding-large w3-hide-small">BAND</a>
-    <a href="#tour" class="w3-bar-item w3-button w3-padding-large w3-hide-small">TOUR</a>
-    <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACT</a>
-    <div class="w3-dropdown-hover w3-hide-small">
-      <button class="w3-padding-large w3-button" title="More">MORE <i class="fa fa-caret-down"></i></button>     
-      <div class="w3-dropdown-content w3-bar-block w3-card-4">
-        <a href="#" class="w3-bar-item w3-button">Merchandise</a>
-        <a href="#" class="w3-bar-item w3-button">Extras</a>
-        <a href="#" class="w3-bar-item w3-button">Media</a>
-      </div>
-    </div>
-    <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
-  </div>
-</div>
-
-<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
-<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
-  <a href="#band" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">BAND</a>
-  <a href="#tour" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">TOUR</a>
-  <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTACT</a>
-  <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">MERCH</a>
-</div>
-
-<!-- Page content -->
-<div class="w3-content" style="max-width:2000px;margin-top:46px">
-
-  <!-- Automatic Slideshow Images -->
-  <div class="mySlides w3-display-container w3-center">
-    <img src="/w3images/la.jpg" style="width:100%">
-    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
-      <h3>Los Angeles</h3>
-      <p><b>We had the best time playing at Venice Beach!</b></p>   
-    </div>
-  </div>
-  <div class="mySlides w3-display-container w3-center">
-    <img src="/w3images/ny.jpg" style="width:100%">
-    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
-      <h3>New York</h3>
-      <p><b>The atmosphere in New York is lorem ipsum.</b></p>    
-    </div>
-  </div>
-  <div class="mySlides w3-display-container w3-center">
-    <img src="/w3images/chicago.jpg" style="width:100%">
-    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
-      <h3>Chicago</h3>
-      <p><b>Thank you, Chicago - A night we won't forget.</b></p>    
-    </div>
-  </div>
-
-  <!-- The Band Section -->
-  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="band">
-    <h2 class="w3-wide">THE BAND</h2>
-    <p class="w3-opacity"><i>We love music</i></p>
-    <p class="w3-justify">We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-      ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur
-      adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-    <div class="w3-row w3-padding-32">
-      <div class="w3-third">
-        <p>Name</p>
-        <img src="/w3images/bandmember.jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
-      </div>
-      <div class="w3-third">
-        <p>Name</p>
-        <img src="/w3images/bandmember.jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
-      </div>
-      <div class="w3-third">
-        <p>Name</p>
-        <img src="/w3images/bandmember.jpg" class="w3-round" alt="Random Name" style="width:60%">
-      </div>
-    </div>
-  </div>
-
-  <!-- The Tour Section -->
-  <div class="w3-black" id="tour">
-    <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
-      <h2 class="w3-wide w3-center">TOUR DATES</h2>
-      <p class="w3-opacity w3-center"><i>Remember to book your tickets!</i></p><br>
-
-      <ul class="w3-ul w3-border w3-white w3-text-grey">
-        <li class="w3-padding">September <span class="w3-tag w3-red w3-margin-left">Sold out</span></li>
-        <li class="w3-padding">October <span class="w3-tag w3-red w3-margin-left">Sold out</span></li>
-        <li class="w3-padding">November <span class="w3-badge w3-right w3-margin-right">3</span></li>
-      </ul>
-
-      <div class="w3-row-padding w3-padding-32" style="margin:0 -16px">
-        <div class="w3-third w3-margin-bottom">
-          <img src="/w3images/newyork.jpg" alt="New York" style="width:100%" class="w3-hover-opacity">
-          <div class="w3-container w3-white">
-            <p><b>New York</b></p>
-            <p class="w3-opacity">Fri 27 Nov 2016</p>
-            <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-            <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Buy Tickets</button>
+  <!--header section start -->
+    <div class="header_section">
+      <div class="header_left">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <div class="logo"><a href="index.html"><img src="images/logo.png"></a></div>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="services.html">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="team.html">Team</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <div class="banner_main">
+          <h1 class="banner_taital">financial <br>Service</h1>
+          <p class="banner_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever </p>
+          <div class="btn_main">
+            <div class="more_bt"><a href="#">Read More </a></div>
+            <div class="contact_bt"><a href="#">Contact Us</a></div>
           </div>
         </div>
-        <div class="w3-third w3-margin-bottom">
-          <img src="/w3images/paris.jpg" alt="Paris" style="width:100%" class="w3-hover-opacity">
-          <div class="w3-container w3-white">
-            <p><b>Paris</b></p>
-            <p class="w3-opacity">Sat 28 Nov 2016</p>
-            <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-            <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Buy Tickets</button>
+      </div>
+      <div class="header_right">
+        <img src="images/banner-img.png" class="banner_img">
+      </div>
+    </div>
+    <!--header section end -->
+    <!--about section start -->
+    <div class="services_section layout_padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8">
+            <h1 class="services_taital">WELCOME TO FINAnCIAL SERVICES</h1>
+            <p class="services_text">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it </p>
+            <div class="moremore_bt"><a href="#">Read More </a></div>
           </div>
-        </div>
-        <div class="w3-third w3-margin-bottom">
-          <img src="/w3images/sanfran.jpg" alt="San Francisco" style="width:100%" class="w3-hover-opacity">
-          <div class="w3-container w3-white">
-            <p><b>San Francisco</b></p>
-            <p class="w3-opacity">Sun 29 Nov 2016</p>
-            <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-            <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Buy Tickets</button>
+          <div class="col-md-4">
+            <div><img src="images/img-1.png" class="image_1"></div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-
-  <!-- Ticket Modal -->
-  <div id="ticketModal" class="w3-modal">
-    <div class="w3-modal-content w3-animate-top w3-card-4">
-      <header class="w3-container w3-teal w3-center w3-padding-32"> 
-        <span onclick="document.getElementById('ticketModal').style.display='none'" 
-       class="w3-button w3-teal w3-xlarge w3-display-topright">×</span>
-        <h2 class="w3-wide"><i class="fa fa-suitcase w3-margin-right"></i>Tickets</h2>
-      </header>
-      <div class="w3-container">
-        <p><label><i class="fa fa-shopping-cart"></i> Tickets, $15 per person</label></p>
-        <input class="w3-input w3-border" type="text" placeholder="How many?">
-        <p><label><i class="fa fa-user"></i> Send To</label></p>
-        <input class="w3-input w3-border" type="text" placeholder="Enter email">
-        <button class="w3-button w3-block w3-teal w3-padding-16 w3-section w3-right">PAY <i class="fa fa-check"></i></button>
-        <button class="w3-button w3-red w3-section" onclick="document.getElementById('ticketModal').style.display='none'">Close <i class="fa fa-remove"></i></button>
-        <p class="w3-right">Need <a href="#" class="w3-text-blue">help?</a></p>
-      </div>
-    </div>
-  </div>
-
-  <!-- The Contact Section -->
-  <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="contact">
-    <h2 class="w3-wide w3-center">CONTACT</h2>
-    <p class="w3-opacity w3-center"><i>Fan? Drop a note!</i></p>
-    <div class="w3-row w3-padding-32">
-      <div class="w3-col m6 w3-large w3-margin-bottom">
-        <i class="fa fa-map-marker" style="width:30px"></i> Chicago, US<br>
-        <i class="fa fa-phone" style="width:30px"></i> Phone: +00 151515<br>
-        <i class="fa fa-envelope" style="width:30px"> </i> Email: mail@mail.com<br>
-      </div>
-      <div class="w3-col m6">
-        <form action="/action_page.php" target="_blank">
-          <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
-            <div class="w3-half">
-              <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
-            </div>
-            <div class="w3-half">
-              <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+    <!--about section end -->
+    <!--services section start -->
+    <div class="what_we_do_section layout_padding">
+      <div class="container">
+        <h1 class="what_taital">WHAT WE DO</h1>
+        <p class="what_text">It is a long established fact that a reader will be distracted by the readable content of a </p>
+        <div class="what_we_do_section_2">
+          <div class="row">
+          <div class="col-lg-3 col-sm-6">
+            <div class="box_main">
+              <div class="icon_1"><img src="images/icon-1.png"></div>
+              <h3 class="accounting_text">Accounting</h3>
+              <p class="lorem_text">Lorem Ipsum is simply dummy text of the printing and</p>
+              <div class="moremore_bt_1"><a href="#">Read More </a></div>
             </div>
           </div>
-          <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
-          <button class="w3-button w3-black w3-section w3-right" type="submit">SEND</button>
-        </form>
+          <div class="col-lg-3 col-sm-6">
+            <div class="box_main active">
+              <div class="icon_1"><img src="images/icon-2.png"></div>
+              <h3 class="accounting_text">Advisor</h3>
+              <p class="lorem_text">Lorem Ipsum is simply dummy text of the printing and</p>
+              <div class="moremore_bt_1"><a href="#">Read More </a></div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <div class="box_main">
+              <div class="icon_1"><img src="images/icon-3.png"></div>
+              <h3 class="accounting_text">Investment</h3>
+              <p class="lorem_text">Lorem Ipsum is simply dummy text of the printing and</p>
+              <div class="moremore_bt_1"><a href="#">Read More </a></div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <div class="box_main">
+              <div class="icon_1"><img src="images/icon-4.png"></div>
+              <h3 class="accounting_text">Financial</h3>
+              <p class="lorem_text">Lorem Ipsum is simply dummy text of the printing and</p>
+              <div class="moremore_bt_1"><a href="#">Read More </a></div>
+            </div>
+          </div>
+        </div>
+        </div>
       </div>
     </div>
-  </div>
-  
-<!-- End Page Content -->
-</div>
-
-<!-- Image of location/map -->
-<img src="/w3images/map.jpg" class="w3-image w3-greyscale-min" style="width:100%">
-
-<!-- Footer -->
-<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
-  <i class="fa fa-facebook-official w3-hover-opacity"></i>
-  <i class="fa fa-instagram w3-hover-opacity"></i>
-  <i class="fa fa-snapchat w3-hover-opacity"></i>
-  <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-  <i class="fa fa-twitter w3-hover-opacity"></i>
-  <i class="fa fa-linkedin w3-hover-opacity"></i>
-  <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
-</footer>
-
-<script>
-// Automatic Slideshow - change image every 4 seconds
-var myIndex = 0;
-carousel();
-
-function carousel() {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";  
-  }
-  myIndex++;
-  if (myIndex > x.length) {myIndex = 1}    
-  x[myIndex-1].style.display = "block";  
-  setTimeout(carousel, 4000);    
-}
-
-
-// Used to toggle the menu on small screens when clicking on the menu button
-function myFunction() {
-  var x = document.getElementById("navDemo");
-  if (x.className.indexOf("w3-show") == -1) {
-    x.className += " w3-show";
-  } else { 
-    x.className = x.className.replace(" w3-show", "");
-  }
-}
-
-// When the user clicks anywhere outside of the modal, close it
-var modal = document.getElementById('ticketModal');
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
-</script>
-
+    <!--services section end -->
+    <!--project section start -->
+    <div class="project_section layout_padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="project_main">
+              <h1 class="services_taital">Our projects</h1>
+              <p class="services_text">It is a long established fact that a reader will be distracted by the readable content of a </p>
+              <div class="moremore_bt"><a href="#">Read More </a></div>
+              <div class="image_6"><img src="images/img-6.png"></div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="images_main">
+              <div class="images_left">
+                <div class="container_1">
+                  <img src="images/img-2.png" alt="Avatar" class="image" style="width:100%">
+                  <div class="middle">
+                    <div class="text"><img src="images/search-icon.png"></div>
+                    <h2 class="fact_text">Established Fact</h2>
+                  </div>
+                </div>
+                <div class="container_1">
+                  <img src="images/img-3.png" alt="Avatar" class="image" style="width:100%">
+                  <div class="middle">
+                    <div class="text"><img src="images/search-icon.png"></div>
+                    <h2 class="fact_text">Established Fact</h2>
+                  </div>
+                </div>
+              </div>
+              <div class="images_right">
+                <div class="container_1">
+                  <img src="images/img-4.png" alt="Avatar" class="image" style="width:100%">
+                  <div class="middle">
+                    <div class="text"><img src="images/search-icon.png"></div>
+                    <h2 class="fact_text">Established Fact</h2>
+                  </div>
+                </div>
+                <div class="container_1">
+                  <img src="images/img-5.png" alt="Avatar" class="image" style="width:100%">
+                  <div class="middle">
+                    <div class="text"><img src="images/search-icon.png"></div>
+                    <h2 class="fact_text">Established Fact</h2>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="project_section_2 layout_padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-sm-6">
+            <div class="icon_1"><img src="images/icon-3.png"></div>
+            <h3 class="accounting_text_1">1000+</h3>
+            <p class="yers_text">Years of Business</p>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <div class="icon_1"><img src="images/icon-4.png"></div>
+            <h3 class="accounting_text_1">20000+</h3>
+            <p class="yers_text">Projects Delivered</p>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <div class="icon_1"><img src="images/icon-2.png"></div>
+            <h3 class="accounting_text_1">10000+</h3>
+            <p class="yers_text">Satisfied Customers</p>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <div class="icon_1"><img src="images/icon-1.png"></div>
+            <h3 class="accounting_text_1">1500+</h3>
+            <p class="yers_text">Services</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--project section end -->
+    <!--team section start -->
+    <div class="team_section layout_padding">
+      <div class="container">
+        <h1 class="what_taital">Our Team and experts</h1>
+        <p class="what_text_1">It is a long established fact that a reader will be distracted by the readable content of a </p>
+        <div class="team_section_2 layout_padding">
+          <div class="row">
+            <div class="col-sm-3">
+              <img src="images/img-7.png" class="image_7">
+              <p class="readable_text">Readable</p>
+              <p class="readable_text_1">Follow Us</p>
+              <div class="social_icon">
+                <ul>
+                  <li><a href="#"><img src="images/fb-icon.png"></a></li>
+                  <li><a href="#"><img src="images/twitter-icon.png"></a></li>
+                  <li><a href="#"><img src="images/linkedin-icon.png"></a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-sm-3">
+              <img src="images/img-8.png" class="image_7">
+              <p class="readable_text">Content</p>
+              <p class="readable_text_1">Follow Us</p>
+              <div class="social_icon">
+                <ul>
+                  <li><a href="#"><img src="images/fb-icon.png"></a></li>
+                  <li><a href="#"><img src="images/twitter-icon.png"></a></li>
+                  <li><a href="#"><img src="images/linkedin-icon.png"></a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-sm-3">
+              <img src="images/img-9.png" class="image_7">
+              <p class="readable_text">Readable</p>
+              <p class="readable_text_1">Follow Us</p>
+              <div class="social_icon">
+                <ul>
+                  <li><a href="#"><img src="images/fb-icon.png"></a></li>
+                  <li><a href="#"><img src="images/twitter-icon.png"></a></li>
+                  <li><a href="#"><img src="images/linkedin-icon.png"></a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-sm-3">
+              <img src="images/img-10.png" class="image_7">
+              <p class="readable_text">Content</p>
+              <p class="readable_text_1">Follow Us</p>
+              <div class="social_icon">
+                <ul>
+                  <li><a href="#"><img src="images/fb-icon.png"></a></li>
+                  <li><a href="#"><img src="images/twitter-icon.png"></a></li>
+                  <li><a href="#"><img src="images/linkedin-icon.png"></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--team section end -->
+    <!--client section start -->
+    <div class="client_section layout_padding">
+      <div class="container">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <h1 class="what_taital">what is syas our clients</h1>
+              <div class="client_section_2 layout_padding">
+                <ul>
+                  <li><img src="images/round-1.png" class="round_1"></li>
+                  <li><img src="images/img-11.png" class="image_11"></li>
+                  <li><img src="images/round-2.png" class="round_2"></li>
+                </ul>
+                <p class="dummy_text">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <h1 class="what_taital">what is syas our clients</h1>
+              <div class="client_section_2 layout_padding">
+                <ul>
+                  <li><img src="images/round-1.png" class="round_1"></li>
+                  <li><img src="images/img-11.png" class="image_11"></li>
+                  <li><img src="images/round-2.png" class="round_2"></li>
+                </ul>
+                <p class="dummy_text">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <h1 class="what_taital">what is syas our clients</h1>
+              <div class="client_section_2 layout_padding">
+                <ul>
+                  <li><img src="images/round-1.png" class="round_1"></li>
+                  <li><img src="images/img-11.png" class="image_11"></li>
+                  <li><img src="images/round-2.png" class="round_2"></li>
+                </ul>
+                <p class="dummy_text">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--client section end -->
+    <!--footer section start -->
+    <div class="footer_section layout_padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-sm-6">
+            <h4 class="about_text">About Financial</h4>
+            <div class="location_text"><img src="images/map-icon.png"><span class="padding_left_15">Locations</span></div>
+            <div class="location_text"><img src="images/call-icon.png"><span class="padding_left_15">+01 9876543210</span></div>
+            <div class="location_text"><img src="images/mail-icon.png"><span class="padding_left_15">demo@gmail.com</span></div>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <h4 class="about_text">About Financial</h4>
+            <p class="dolor_text">ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <h4 class="about_text">Instagram</h4>
+            <div class="footer_images">
+              <div class="footer_images_left">
+                <div class="image_12"><img src="images/img-12.png"></div>
+                <div class="image_12"><img src="images/img-12.png"></div>
+                <div class="image_12"><img src="images/img-12.png"></div>
+              </div>
+              <div class="footer_images_right">
+                <div class="image_12"><img src="images/img-12.png"></div>
+                <div class="image_12"><img src="images/img-12.png"></div>
+                <div class="image_12"><img src="images/img-12.png"></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <h4 class="about_text">Newsletter</h4>
+            <input type="text" class="mail_text" placeholder="Enter your email" name="Enter your email">
+            <div class="subscribe_bt"><a href="#">Subscribe</a></div>
+            <div class="footer_social_icon">
+              <ul>
+                <li><a href="#"><img src="images/fb-icon1.png"></a></li>
+                 <li><a href="#"><img src="images/twitter-icon1.png"></a></li>
+                <li><a href="#"><img src="images/linkedin-icon1.png"></a></li>
+                <li><a href="#"><img src="images/youtub-icon1.png"></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- copyright section start -->
+        <div class="copyright_section">
+          <div class="copyright_text">Copyright 2019 All Right Reserved By <a href="https://html.design">Free html  Templates</a></div>
+        </div>
+        <!-- copyright section end -->
+      </div>
+    </div>
+    <!--footer section end -->
+    <!-- Javascript files-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.0.0.min.js"></script>
+    <script src="js/plugin.js"></script>
+    <!-- sidebar -->
+    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="js/custom.js"></script>
+    <!-- javascript --> 
+    <script src="js/owl.carousel.js"></script>
+    <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script> 
 </body>
 </html>
